@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url(images/bg-login.jpg);
+        }
+
+        header {
+            margin-left: 50px;
+        }
+
+
+        section {
+            background-color: rgba(0, 0, 0, 0.392);
+            width: 400px;
+            margin: 50px auto;
+            color: #fff;
+            position: relative;
+            animation-name: example;
+            animation-duration: 1.5s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes example {
+            from {
+                top: -200px;
+            }
+
+            to {
+                top: 0px;
+            }
+        }
+
+        article {
+            padding: 20px
+        }
+
+        article h2 {
+            text-align: center;
+        }
+
+        .form {
+            margin: 28px 0;
+        }
+
+        .form input {
+            width: 360px;
+            height: 32px;
+            border-radius: 24px;
+            border: none;
+            text-align: center;
+        }
+
+        .btn_submit {
+            font-size: 20px;
+            border-radius: 24px;
+            padding: 4px 12px;
+            border: none
+        }
+
+        .btn_submit:hover {
+            background: linear-gradient(60deg, rgb(94, 148, 219), rgb(69, 134, 239), rgb(22, 92, 205));
+            cursor: pointer;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2> <a href="index.html" style="color:rgb(0, 255, 102)">Quay lại</a></h2>
+    </header>
+
+    <section>
+        <article>
+            <form action="index.html">
+                <h2>Đăng nhập</h2>
+                <br> <br>
+
+                <div class="form">
+                    <h3>Tài khoản</h3> &ensp;
+                    <input type="text" placeholder="Tài khoản" name="username" required>
+                </div>
+
+                <div class="form">
+                    <h3>Mật khẩu</h3> &ensp;
+                    <input type="password" placeholder="Mật khẩu" name="pass" required>
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                    <input type="submit" value="Đăng nhập" class="btn_submit">
+                </div>
+            </form>
+        </article>
+    </section>
+</body>
+
+</html>

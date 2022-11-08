@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .form_1 table {
+            border: 20px solid rgb(140, 224, 255);
+        }
+
+        .form_1 h2 {
+            color: #fff;
+            background-color: orangered;
+            text-align: center;
+            padding: 8px;
+        }
+
+        .form_1 th,
+        .form_1 td {
+            padding: 5px 12px;
+        }
+
+        .form_1 th {
+            text-align: right;
+            color: blue
+        }
+
+        .input_text {
+            border-top: 4px solid rgb(185, 181, 181);
+            border-left: 4px solid rgb(185, 181, 181);
+            border-right: 2px solid rgb(185, 181, 181);
+            border-bottom: 2px solid rgb(185, 181, 181)
+        }
+
+        .interests>td {
+            color: orange;
+            padding-right: 20px
+        }
+
+
+        .form_2 table {
+            background-color: #fffda9
+        }
+
+        .form_2 h2 {
+            color: blue;
+            background-color: #d4fdd6;
+            text-align: center;
+            padding: 8px;
+        }
+
+        .form_2 th,
+        .form_2 td {
+            padding: 5px 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="" class="form_1">
+            <table class="table_1">
+                <tr>
+                    <th colspan="4">
+                        <h2>Sở thích của bạn</h2>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="yourName">Họ và tên</label>
+                    </th>
+                    <td colspan="3">
+                        <input type="text" name="yourName" class="input_text" size="30" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        <label for="email">Email</label>
+                    </th>
+                    <td colspan="2">
+                        <input type="text" name="email" class="input_text" />
+                    </td>
+                    <td></td>
+                </tr>
+
+                <tr class="interests">
+                    <th>
+                        <label for="interests">Sở thích</label>
+                    </th>
+                    <td>
+                        <input type="checkbox" name="interests" class="interest" />Thể Thao
+                    </td>
+                    <td>
+                        <input type="checkbox" name="interests" class="interest" />Âm Nhạc
+                    </td>
+                    <td>
+                        <input type="checkbox" name="interests" class="interest" />Đọc sách
+                    </td>
+                </tr>
+
+                <tr class="interests">
+                    <th>
+                        <label for="interests"></label>
+                    </th>
+                    <td>
+                        <input type="checkbox" name="interests" class="interest" />Lướt web
+                    </td>
+                    <td>
+                        <input type="checkbox" name="interests" class="interest" />Chơi game
+                    </td>
+                    <td>
+                        <input type="checkbox" name="interests" class="interest" />Điện ảnh
+                    </td>
+                </tr>
+
+                <tr class="interests">
+                    <th>
+                        <label for="interests"></label>
+                    </th>
+                    <td>
+                        <input type="checkbox" name="interests" class="interest" />Du lịch
+                    </td>
+                </tr>
+
+                <tr class="button">
+                    <th></th>
+                    <td>
+                        <input type="submit" name="submit" value="Gửi thông tin" />
+                    </td>
+                    <td>
+                        <input type="reset" name="reset" value="Nhập lại" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <!-- FORM 2 -->
+        <form action="" class="form_2">
+            <table>
+                <tr>
+                    <th colspan="4">
+                        <h2>Đăng ký học viên</h2>
+                    </th>
+                </tr>
+
+                <tr>
+                    <th>
+                        <label for="yourName">Họ và tên</label>
+                    </th>
+                    <td colspan="3">
+                        <input type="text" name="yourName" size="30" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        <label for="birthDay">Ngày sinh</label>
+                    </th>
+                    <td colspan="2">
+                        <input type="text" name="birthDay" size="15" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        <label for="gender">Giới tính</label>
+                    </th>
+                    <td colspan="2">
+                        <input type="radio" name="gender" value="nam" checked="checked" />Nam
+                        <input type="radio" name="gender" value="nữ" />Nữ
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        <label for="address">Địa chỉ</label>
+                    </th>
+                    <td colspan="3">
+                        <textarea name="" id="" cols="40" rows="5"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        <label for="class">Lớp</label>
+                    </th>
+                    <td>
+                        <select name="class" id="" style="width:100px; text-align:center">
+                            <option value="none">--Chọn lớp--</option>
+                            <option value="">Java 8</option>
+                            <option value="">Java 9</option>
+                            <option value="">Java 10</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        <label for="email">Email</label>
+                    </th>
+                    <td colspan="2">
+                        <input type="text" name="email" size="20" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        <label for="phone">Điện thoại</label>
+                    </th>
+                    <td colspan="2">
+                        <input type="text" name="phone" size="20" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                    </th>
+                    <td>
+                        <input type="submit" value="Đăng ký">
+                        <input type="reset" value="Nhập lại">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>

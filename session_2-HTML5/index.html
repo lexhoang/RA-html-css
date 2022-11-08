@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- ICON W3 -->
+    <script src="https://kit.fontawesome.com/68734f4fab.js" crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        /* HEADER */
+        header {
+            background-image: url("media/bg.jpg");
+            color: #fff;
+            padding: 18px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        /* CONTENT */
+        .tittle {
+            text-align: center;
+            font-size: 36px;
+            color: #c51162;
+            margin: 20px 0 40px 0;
+        }
+
+        session {
+            display: flex;
+        }
+
+        session>nav {
+            margin: 20px;
+            border: 3px solid #ccc;
+            padding: 20px;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .link_nav {
+            margin-top: 20px;
+        }
+
+        .link_nav a {
+            text-decoration: none;
+            color: #000
+        }
+
+        .ttcn {
+            background-color: #f9fbe7;
+            width: 100%;
+            margin: 20px
+        }
+
+        p {
+            margin-top: 8px
+        }
+
+        b {
+            font-size: 18px;
+        }
+
+        li {
+            font-size: 18px
+        }
+
+        .infor {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 8px solid #ccc
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: antiquewhite;
+            text-align: center;
+            padding: 24px;
+        }
+
+        .link_footer {
+            margin-top: 8px
+        }
+
+        button {
+            margin-top: 24px;
+            font-size: 16px;
+            background-color: #000;
+            transition: calc(0.8s);
+        }
+
+        button a {
+            color: greenyellow;
+            text-decoration: none
+        }
+
+        button:hover {
+            font-size: 20px;
+            transition: calc(0.8s);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="">
+        <!-- Header -->
+        <header>
+            <h1>CV CÁ NHÂN</h1>
+        </header>
+
+        <!-- Main  -->
+        <session>
+            <nav>
+                <div class="link_nav">
+                    <i class="fa-brands fa-facebook" style="color:blue"></i>
+                    <a target="_blank" href="https://www.facebook.com/hoangthinhbb1131999">
+                        Lê Hoàng</a>
+                </div>
+                <br>
+                <hr>
+
+                <div class="link_nav">
+                    <i class="fa-regular fa-envelope" style="color:#c51162"></i><br>
+                    <a target="_blank" href="mailto:lehoang999113@gmail.com">lehoang999113@gmail.com</a>
+                </div>
+                <br>
+                <hr>
+
+
+                <div class="link_nav">
+                    <i class="fa-brands fa-github"></i><br>
+                    <a target="_blank" href="https://github.com/lexhoang">https://github.com/lexhoang</a>
+                </div>
+                <br>
+                <hr>
+            </nav>
+
+            <article class="ttcn">
+                <h2 class="tittle"><i>Giới thiệu bản thân</i></h2>
+                <div class="infor">
+                    <div>
+                        <h2>Thông tin:</h2>
+                        <br>
+                        <div style="margin-left: 24px">
+                            <p>Họ tên:
+                                <b>Lê Xuân Hoàng</b>
+                            </p>
+                            <p>Ngày sinh: <b>11/3/1999</b></p>
+
+                            <p>Địa chỉ: <b>Việt Trì, Phú Thọ</b></p>
+
+                            <p>Số điện thoại: <b>0822103199</b>
+                                <i class="fa-solid fa-phone"></i>
+                            </p>
+
+                            <p>Email:
+                                <a target="_blank" href="mailto:lehoang999113@gmail.com"
+                                    style="color:#c51162"><b>lehoang999113@gmail.com</b></a>
+                                <i class="fa-regular fa-envelope" style="color:#c51162"></i><br>
+                            </p>
+
+                            <p>Facebook:
+                                <a target="_blank" href="https://www.facebook.com/hoangthinhbb1131999"
+                                    style="color:rgb(47, 72, 255); text-decoration: none;"><b>Lê
+                                        Hoàng</b>
+                                </a>
+                                <i class="fa-brands fa-facebook" style="color:blue"></i>
+                            </p>
+                        </div>
+                        <br><br>
+                        <hr>
+                        <div style="margin-top:50px">
+                            <h2>Sở thích:</h2>
+                            <br>
+                            <ul>
+                                <li>Đá bóng</li>
+                                <li>Xem phim</li>
+                                <li>Nghe nhạc</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <img class="img" src="media/avt.jpg" alt="">
+                </div>
+            </article>
+
+            <article style="margin:20px">
+                <audio style="width:250px" controls>
+                    <source src="horse.ogg" type="audio/ogg">
+                    <source src="media/TroiHomNayNhieuMayCuc-Den-6464309.mp3" type="audio/mpeg">
+                </audio>
+                <br> <br>
+                <hr>
+                <br>
+                <video width="250" controls autoplay muted>
+                    <source src="media/tiktok.mp4" type="video/mp4">
+                    <source src="mov_bbb.ogg" type="video/ogg">
+                    Your browser does not support HTML video.
+                </video>
+            </article>
+        </session>
+
+
+        <!-- Footeer -->
+        <footer>
+            <div class="link_footer">
+                <i class="fa-brands fa-github"></i>
+                <a target="_blank" href="https://github.com/lexhoang">https://github.com/lexhoang</a>
+            </div>
+
+            <div class="link_footer">
+                <i class="fa-regular fa-envelope" style="color:#c51162"></i>
+                <a target="_blank" href="mailto:lehoang999113@gmail.com"><b>lehoang999113@gmail.com</b></a>
+            </div>
+
+            <div class="link_footer">
+                <i class="fa-brands fa-facebook" style="color:blue"></i>
+                <a target="_blank" href="https://www.facebook.com/hoangthinhbb1131999">
+                    https://www.facebook.com/hoangthinhbb1131999</a>
+            </div>
+
+            <button>
+                <a target="_blank" href="#"> <i class='fas fa-arrow-alt-circle-up'></i> Back to top</a>
+            </button>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ICON -->
+    <script src="https://kit.fontawesome.com/68734f4fab.js" crossorigin="anonymous"></script>
+
+    <title>Thực hành Session 3</title>
+    <style>
+        * {
+            margin: 1px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+        }
+
+
+        /*///////////////     THỰC HÀNH 1 --  FORM SIMPLE    /////////////*/
+        .thucHanh_1 {
+            padding: 0 12px;
+        }
+
+        .thucHanh_1 h1 {
+            margin-bottom: 20px;
+            padding: 8px;
+            text-align: center;
+            background-color: #000;
+            color: #00bcd4;
+            font-style: italic;
+        }
+
+        fieldset {
+            width: 440px;
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            padding: 12px 0;
+        }
+
+        .thucHanh_1 div {
+            margin-top: 30px
+        }
+
+        .thucHanh_1 .submit {
+            font-weight: bold;
+            transition: calc(1.2s);
+            font-size: 16px;
+        }
+
+        .thucHanh_1 .submit:hover {
+            padding: 3px;
+            background-color: green;
+            color: white;
+            border: 1px solid #fff;
+            font-weight: bold;
+            cursor: pointer;
+            transform: scale(1.5);
+            transition: calc(0.8s);
+        }
+
+
+
+        /*///////////////     THỰC HÀNH 2 --  FORM SEARCH GOOGLE     /////////////*/
+        .thucHanh_2 {
+            /* width: 90%; */
+            text-align: center;
+            padding: 0 12px
+        }
+
+        .thucHanh_2 h1 {
+            margin-bottom: 20px;
+            padding: 8px;
+            text-align: center;
+            background-color: #000;
+            color: #f06292;
+            font-style: italic;
+        }
+
+        .thucHanh_2 .display {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .thucHanh_2 .search {
+            width: 300px;
+            height: 40px;
+            font-size: 16px;
+            border-radius: 24px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+        .thucHanh_2 .submit {
+            margin-left: 20px;
+            padding: 3px;
+            font-size: 18px;
+        }
+
+        .thucHanh_2 .icon_search {
+            position: relative;
+            left: 8%;
+        }
+
+        .thucHanh_2 .submit:hover {
+            cursor: pointer;
+            background-color: #ccc;
+            border: 1px solid #ccc;
+            color: #fff
+        }
+
+
+
+        /*///////////////     THỰC HÀNH 3-4 --  FORM TABLE    /////////////*/
+
+        /*/////  THỰC HÀNH 3  /////*/
+        .table {
+            width: 100%;
+            padding: 0 12px
+        }
+
+        .table h1 {
+            padding: 8px;
+            text-align: center;
+            background-color: #000;
+            color: #ff5722;
+            font-style: italic;
+        }
+
+        .table h2 {
+            text-align: right;
+            margin-top: 36px;
+        }
+
+        .thucHanh_3 table {
+            margin: 24px auto;
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .thucHanh_3 th,
+        .thucHanh_3 td {
+            border: 1px solid #dddddd;
+            padding: 8px
+        }
+
+        .thucHanh_3 th {
+            padding: 16px;
+            background-color: #fff
+        }
+
+        .thucHanh_3 tr:nth-child(odd) {
+            background-color: #dddddd;
+        }
+
+
+        /*/////  THỰC HÀNH 4  /////*/
+        .thucHanh_4 table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px auto;
+        }
+
+        .thucHanh_4 th,
+        .thucHanh_4 td {
+            font-family: Tahoma;
+            border: 1px solid #000
+        }
+
+        .thucHanh_4 th {
+            padding: 5px 10px;
+            color: #fff;
+            background-color: crimson;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+
+        .thucHanh_4 td {
+            padding: 5px 10px;
+            padding: 8px;
+            font-size: 12px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- //////////////////////// THỰC HÀNH 1 --- FORM SIMPLE   /////////////////// -->
+        <!--  -->
+        <div class="thucHanh_1">
+            <h1>Form Simple</h1>
+            <fieldset>
+                <form action="simpleForm.html">
+                    <h2 style="font-size:30px">Order Form</h2>
+
+                    <div>
+                        <h3>What would you like to buy?</h3><br>
+                        <select name="" style="width:180px">
+                            <option value="A">A</option>
+                            <option value="B">B (+ 0.5$)</option>
+                            <option value="C">C (+ 0.5$)</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <h3>How many would you like to order?</h3><br>
+                        <input type="radio" name="radio">1 - $10 <br>
+                        <input type="radio" name="radio">1 - $20 <br>
+                        <input type="radio" name="radio">1 - $25
+                    </div>
+
+                    <div>
+                        <h3>Name <span style="color:red">*</span> </h3><br>
+                        <input type="text" name="" size="20" placeholder="First Name">
+                        <input type="text" name="" size="20" placeholder="Last Name">
+                    </div>
+
+                    <div>
+                        <h3>Email</h3><br>
+                        <input type="text" name="" size="40">
+                    </div>
+
+                    <div>
+                        <h3>Phone Number</h3><br>
+                        <input type="text" size="5"> -
+                        <input type="text" size="5"> -
+                        <input type="text" size="5">
+                        <br><br><br>
+                    </div>
+
+                    <input type="submit" name="submit" value="Submit" class="submit">
+                </form>
+            </fieldset>
+        </div>
+        <br>
+        <hr>
+
+        <!-- //////////////////////// THỰC HÀNH 2 --- FORM SEARCH GOOGLE   /////////////////// -->
+        <!--  -->
+        <div class="thucHanh_2">
+            <h1>Form Search Google</h1>
+            <img src="logoGG.jpg" alt="" width="300">
+            <form action="https://www.google.com.vn/search?" class="display">
+                <i class="fas fa-magnifying-glass icon_search"></i>
+                <input class="search" type="text" name="q" placeholder="Tìm kiếm..." />
+                <input class="submit" type="submit" value="Tìm kiếm" />
+            </form>
+        </div>
+        <br>
+        <hr>
+
+
+        <!-- ////////////////////////   FORM TABLE   /////////////////// -->
+        <div class="table">
+            <h1>Form Table</h1>
+
+            <!-- THỰC HÀNH 3 -->
+            <div class="thucHanh_3">
+                <h2>Table Simple</h2>
+                <hr>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Company</th>
+                            <th>Contact</th>
+                            <th>Country</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Alfreds Futterkiste</td>
+                            <td>Maria Andes</td>
+                            <td>Germany</td>
+                        </tr>
+
+                        <tr>
+                            <td>Centro comercial Moctezuma</td>
+                            <td>Francisco Chang</td>
+                            <td>Mexico</td>
+                        </tr>
+
+                        <tr>
+                            <td>Ernst Handel</td>
+                            <td>Roland Mendel</td>
+                            <td>Austria</td>
+                        </tr>
+
+                        <tr>
+                            <td>Island Trading</td>
+                            <td>Helen Bennett</td>
+                            <td>UK</td>
+                        </tr>
+
+                        <tr>
+                            <td>Lauging Bacchus Winecellars</td>
+                            <td>Yoshi Tannamuri</td>
+                            <td>Canada</td>
+                        </tr>
+
+                        <tr>
+                            <td>Magazzini Alimentari Riuniti</td>
+                            <td>Giovani Rovelli</td>
+                            <td>Italy</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- THỰC HÀNH 4 -->
+            <div class="thucHanh_4">
+                <h2>Table nâng cao</h2>
+                <hr>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th rowspan="2">Thứ</th>
+                            <th colspan="2">Hoạt động</th>
+                        </tr>
+                        <tr>
+                            <th>Sáng</th>
+                            <th>Chiều</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Thứ Hai</td>
+                            <td>Thể dục</td>
+                            <td>HD trò chơi mới</td>
+                        </tr>
+
+                        <tr>
+                            <td>Thứ 3</td>
+                            <td>Nhận biết tập nói</td>
+                            <td>Rèn nề nếp kỹ năng sống</td>
+                        </tr>
+
+                        <tr>
+                            <td>Thứ 4</td>
+                            <td>Âm Nhạc</td>
+                            <td>Vui chơi</td>
+                        </tr>
+
+                        <tr>
+                            <td>Thứ 5</td>
+                            <td>Văn họ</td>
+                            <td>nhận biêt các giá trị sống</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

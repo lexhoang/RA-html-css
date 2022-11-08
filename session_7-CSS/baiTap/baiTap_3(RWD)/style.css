@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+}
+
+header i {
+    font-size: 28px;
+    padding: 12px;
+    margin-left: 50px;
+}
+
+
+.slide {
+    width: 400px;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.slide div {
+    margin-top: 16px
+}
+
+.slide button {
+    color: #fff;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+}
+
+.btn_main {
+    background-color: rgb(12, 117, 255)
+}
+
+.btn_secondary {
+    background-color: rgb(113, 110, 110)
+}
+
+.btn_main:hover {
+    background-color: rgb(255, 0, 115);
+    cursor: pointer;
+}
+
+.btn_secondary:hover {
+    background-color: rgb(255, 125, 108);
+    cursor: pointer;
+}
+
+
+/* CONTENT */
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #f5f9fc;
+
+}
+
+article {
+    width: 33%;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.card-img {
+    background-color: #54585b;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+
+.card-body {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-top: none;
+    padding: 16px;
+}
+
+.card-content {
+    margin-bottom: 16px;
+}
+
+.card-content p {
+    text-align: justify
+}
+
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-footer button {
+    padding: 4px 8px;
+    float: left;
+    background-color: #f9fdfd;
+    border: 1px solid rgb(123, 121, 121);
+}
+
+.card-footer button:hover {
+    cursor: pointer;
+    color: #fff
+}
+
+.btn-view:hover {
+    background-color: #009688;
+}
+
+.btn-edit:hover {
+    background-color: #6ab5ee;
+}
+
+.card-footer p {
+    opacity: 0.5;
+}
+
+/*/////////////////       RWD       /////////////////*/
+
+@media only screen and (max-width:600px) {
+    article {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:600px) {
+    article {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    article {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width:920px) {
+    article {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    article {
+        width: 33%;
+    }
+}

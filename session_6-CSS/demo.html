@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: Crimson;
+            -webkit-animation-name: example;
+            /* Safari 4.0 - 8.0 */
+            -webkit-animation-duration: 4s;
+            /* Safari 4.0 - 8.0 */
+            animation-name: example;
+            animation-direction: normal;
+        }
+
+        /* Safari 4.0 - 8.0 */
+        @-webkit-keyframes example {
+            0% {
+                background-color: Crimson;
+            }
+
+            25% {
+                background-color: LightSalmon;
+            }
+
+            50% {
+                background-color: pink;
+            }
+
+            100% {
+                background-color: purple;
+            }
+        }
+
+        /* Cú pháp tiêu chuẩn */
+        @keyframes example {
+            0% {
+                background-color: Crimson;
+            }
+
+            25% {
+                background-color: LightSalmon;
+            }
+
+            50% {
+                background-color: pink;
+            }
+
+            100% {
+                background-color: indigo;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

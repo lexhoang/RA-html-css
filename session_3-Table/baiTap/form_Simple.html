@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formSimple_1</title>
+    <style>
+        form {
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: inline-block;
+            min-width: 120px
+        }
+
+        legend {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/">
+        <fieldset>
+            <legend>Form cơ bản</legend>
+            <label for="name">Full Name:</label>
+            <input type="text" name="name">
+
+            <br><br>
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" value="nam" />Nam &nbsp;
+            <input type="radio" name="gender" value="nữ" />Nữ
+
+            <br><br>
+            <label for="Birthday">Birthday:</label>
+            <input type="date" name="Birthday" />
+
+            <br><br>
+            <label for="address">Địa chỉ:</label>
+            <input type="text" name="address" />
+
+            <br><br>
+            <label for="password">Password:</label>
+            <input type="password">
+
+            <br><br>
+            <label for="phone">Số điện thoại:</label>
+            <input type="tel" name="phone" />
+
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" />
+
+            <br><br>
+            <label for="education">Hệ giáo dục:</label>
+            <select name="education" id="">
+                <option value="">THPT</option>
+                <option value="">Cao đẳng</option>
+                <option value="">Đại học</option>
+            </select>
+
+            <br><br>
+            <label for="note">Chú thích:</label>
+            <textarea name="note" cols="40" rows="5"></textarea>
+
+            <br><br>
+            <label for="interests">Sở thích:</label>
+            <input type="checkbox" name="interests" value="code" /> Code
+            <input type="checkbox" name="interests" value="Du lịch" /> Du lịch
+
+
+
+            <br><br>
+            <label for="image">Image:</label>
+            <input type="image" name="image" src="img.jpg" width="300" />
+
+            <br><br>
+            <label for="range">Range:</label>
+            <input type="range" name="range" />
+
+            <br><br>
+            <label for="file">File:</label>
+            <input type="file" name="file" />
+
+            <br><br>
+            <label for="time">Thời gian:</label>
+            <input type="time" name="time" />
+
+            <br><br>
+            <label for="datetime-local">Time - Date:</label>
+            <input type="datetime-local" name="datetime-local" />
+
+            <br><br>
+            <label for="color">Chọn màu:</label>
+            <input type="color" name="color" />
+
+            <br><br>
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset" />
+        </fieldset>
+    </form>
+</body>
+
+</html>

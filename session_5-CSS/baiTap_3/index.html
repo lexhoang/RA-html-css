@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <style>
+        section {
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            position: relative;
+            animation-name: example;
+            animation-duration: 1.5s;
+            animation-fill-mode: both;
+
+        }
+
+        @keyframes example {
+            from {
+                top: 800px;
+            }
+
+            to {
+                top: 0px;
+            }
+        }
+
+        article {
+            padding: 12px;
+        }
+
+        form {
+            margin: 0 auto;
+        }
+
+        input {
+            font-size: 18px;
+            padding: 5px 20px;
+            cursor: pointer;
+            background-color: red;
+            color: #fff;
+            transition: calc(0.8s);
+            border-radius: 24px;
+            border: 5px solid #fff;
+            font-weight: bold;
+        }
+
+        input:hover {
+            font-size: 24px;
+            background-color: #000;
+            border: 5px solid red;
+            color: rgb(0, 255, 0);
+            transition: calc(0.6s)
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="head">
+                <h3><a href="index.html"><b>TRANG CHỦ</b></a></h3>
+            </div>
+
+            <div class="dropdown">
+                <h3> <span class="mucluc">MỤC LỤC</span></h3>
+                <div class="dropdown-content">
+                    <h5><a href="chuong_1.html">Chương 1: Âm mưu của phật tổ như lai</a></h5>
+                    <h5><a href="chuong_2.html">Chương 2: Lời thề của huynh đệ vô dụng</a></h5>
+                    <h5><a href="chuong_3.html">Chương 3: Chó cậy thế chủ, càng phải đánh chó</a></h5>
+                    <h5><a href="login.html">Chương 4: Thiên tài chế tạo sách ma pháp</a></h5>
+                </div>
+            </div>
+        </nav>
+
+        <div>
+            <button class="btn-login">
+                <a href="login.html" style="color:#000; text-decoration: none;">Đăng nhập</a>
+            </button>
+        </div>
+    </header>
+
+    <h1>TÔN NGỘ KHÔNG ĐẠI NÁO DỊ GIỚI</h1> <br>
+
+    <section>
+        <article>
+            <form action="chuong_1.html">
+                <input type="submit" value="Đọc từ đầu">
+            </form>
+        </article>
+
+        <article>
+            <img src="images/slide.jpg" alt="" width="320px" style="margin:0 auto;">
+        </article>
+    </section>
+</body>
+
+</html>
